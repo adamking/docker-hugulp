@@ -1,0 +1,31 @@
+{
+  "name": "hugo-docker-gulp-starter",
+  "version": "1.0.0",
+  "description": "`git clone https://github.com/adamking/hugo-docker-gulp-starter.git test-site && cd test-site && make reset-git`",
+  "main": "index.js",
+  "devDependencies": {
+    "http-server": "^0.11.1",
+    "hugulp": "github:adamking/hugulp#develop"
+  },
+  "scripts": {
+    "hugulp": "hugulp",
+    "http-server": "http-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Adam King",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adamking/hugo-docker-gulp-starter.git"
+  },
+  "keywords": [
+    "hugo",
+    "docker",
+    "gulp",
+    "starter"
+  ],
+  "bugs": {
+    "url": "https://github.com/adamking/hugo-docker-gulp-starter/issues"
+  },
+  "homepage": "https://github.com/adamking/hugo-docker-gulp-starter#readme"
+}

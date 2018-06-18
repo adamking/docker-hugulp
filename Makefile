@@ -1,4 +1,4 @@
-SITE_NAME = hugo-build-tools
+SITE_NAME = docker-hugo-gulp-starter
 PWD ?= $(shell pwd)
 PORT = 8080
 
@@ -7,6 +7,7 @@ define docker
 	--rm \
 	-it \
 	-v $(PWD):/site \
+	--name $(SITE_NAME) \
 	$(2) \
 	$(SITE_NAME) \
 	$(1)
@@ -26,6 +27,9 @@ serve:
 
 terminal:
 	$(call docker, bash)
+
+kill:
+	@docker kill $(SITE_NAME)
 
 docker-install:
 	@npm audit fix
